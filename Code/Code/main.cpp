@@ -1,19 +1,26 @@
 #include <iostream>
-
-#include "config.cpp"
+#include "config.h"
 #include "Cube.h"
+#include "Binary_Search.h"
+#include "Sort.h"
 using namespace std;
+#define N 10
 
+void Bubble(vector <int>& v) {
+	for (int i = 0; i < v.size(); i++) {
+		for (int j = 0; j < v.size() - i - 1; j++) {
+			if (v[j] > v[j + 1])
+				swap(v[j], v[j + 1]);
+		}
+	}
+}
 int main() {
-	Cube c1, c2;
-	c1.setLengthWidthHeight(1, 2, 3);
-	c2.setLengthWidthHeight(2, 3, 4);
-	cout << "c1 中持 : " << c1.getArea() << " , c1 悶持 : " << c1.getVolum() << endl;
-	cout << "c2 中持 : " << c2.getArea() << " , c2 悶持 : " << c2.getVolum() << endl;
-	cout << c1.isEquals(c2) << endl;
-
-
+	srand(1);
+	vector<int>v;
+	for (int i = 0; i < N; i++) {
+		v.push_back(rand() % 10);
+		cout << v[i] << ' ';
+	}cout << endl;
+	
 	return 0;
 }
-
-

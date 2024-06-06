@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="config.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -27,12 +24,21 @@
     <ClCompile Include="Cube.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="config.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary_search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sort.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Cube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary_Search.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

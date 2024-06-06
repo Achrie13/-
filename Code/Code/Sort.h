@@ -1,14 +1,15 @@
 #pragma once
-class Sort{
-	typedef int DATA;
-	void init(DATA[], int);
-	void Bubble(DATA[], int);
-	void Select(DATA[], int);
-	void Shell(DATA[], int);
-	void Insertion(DATA[], int);
+#include <vector>
+typedef int DATA;
+
+class Sort {
 private:
-	DATA arr[10];
-	int size;
+	std::vector<DATA> m_v;
 public:
 
+	void init(std::vector<DATA>&);
+	void Bubble();
+	void Select();
+	void Shell();
+	void Insertion();
 };
